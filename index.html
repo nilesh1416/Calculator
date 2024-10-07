@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="./input.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bg-gray-300">
+    <form class="borderp-5 border-2 border-black bg-slate-700 w-2/6 m-5 mx-auto rounded-lg shadow-lg">
+        <h1 class="flex justify-center h-10 font-extrabold text-lg text-white ">Calculater</h1>
+       <input name="display" type="text" placeholder="Enter Number" class=" hover:bg-violet-500 borderp-3 border-2 border-black w-full rounded-lg">
+       <div class="grid grid-cols-4 gap-2 p-2">
+           <input type="button" value="1" class=" p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg " onclick="form.display.value +='1'">
+           <input type="button" value="2" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='2'">
+           <input type="button" value="3" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='3'">
+           <input type="button" value="+" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='+'">
+           <input type="button" value="4" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='4'">
+           <input type="button" value="5" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='5'">
+           <input type="button" value="6" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='6'">
+           <input type="button" value="-" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='-'">
+           <input type="button" value="7" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='7'">
+           <input type="button" value="8" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='8'">
+           <input type="button" value="9" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='9'">
+           <input type="button" value="*" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='*'">
+           <input type="button" value="0" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='0'">
+           <input type="button" value="." class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='.'">
+           <input type="button" value="00" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='00'">
+           <input type="button" value="/" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg" onclick="form.display.value +='/'">
+           <input type="button" value="=" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg " onclick="form.display.value =eval
+           (form.display.value)">
+           <input type="button" value="AC" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg " onclick="form.display.value =''">
+           <input type="button" value="*100" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg " onclick="form.display.value +='*100'">
+           <input type="button" value="Del" class="p-2 hover:bg-blue-800 bg-slate-900 text-white border-2 rounded-lg " onclick="form.display.value = form.display.value.slice(0, -1)"(form.display.value)"> 
+       </div>
+   </form>
+</body>
+</html>
